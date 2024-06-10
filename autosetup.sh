@@ -346,3 +346,6 @@ do
 		;;	    
 	esac
 done
+
+## Symlink dotfiles
+stow tex -t ~
