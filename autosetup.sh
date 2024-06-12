@@ -1,9 +1,11 @@
 #!/bin/bash
-aptDepends=( 
+DebianAptDepends=( 
                python3-pip 
 	       stow
                git 
                unzip 
+	       fd-find
+
            )
 
 pipDepends=(
@@ -48,9 +50,9 @@ echo "This is a Linux Machine"
     sudo yum install git -y
 
   elif [ $pkg_manager = "apt" ]; then
-
+	echo "Hello Linux user"
     sudo apt-get update && sudo apt-get upgrade -y
-    sudo apt-get install -y "${aptDepends[@]}" 
+    sudo apt-get install -y "${DebianAptDepends[@]}" 
     sudo pip3 install -y "${pipDepends[@]}"
 
   fi
@@ -63,19 +65,6 @@ else
   exit 1
 fi
 
-echo "Congratulations, Git has now successfully been installed!"
-
-# Grant execution permissions to the script
-chmod +x autoinstall.sh
-
-# Test the configuration
-echo "Testing git configuration..."
-
-if git --version >/dev/null 2>&1; then
-  echo "Git is configured correctly."
-else
-  echo "Git configuration test failed. Please check the installation."
-fi
 
 #Setting up Git
 read -p "${y}Do you want to setup Git global config? (y/n): " -r; $r
