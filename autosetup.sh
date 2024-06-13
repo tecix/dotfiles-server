@@ -50,10 +50,11 @@ echo "This is a Linux Machine"
     sudo yum install git -y
 
   elif [ $pkg_manager = "apt" ]; then
-	echo "Hello Linux user"
+    echo "Hello Linux user"
     sudo apt-get update && sudo apt-get upgrade -y
     sudo apt-get install -y "${DebianAptDepends[@]}" 
     sudo pip3 install -y "${pipDepends[@]}"
+    ln -s `which fdfind` /usr/local/bin/fd
 
   fi
 
