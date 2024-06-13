@@ -5,7 +5,7 @@ DebianAptDepends=(
                git 
                unzip 
 	       fd-find
-
+               ripgrep
            )
 
 pipDepends=(
