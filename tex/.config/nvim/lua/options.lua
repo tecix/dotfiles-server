@@ -21,4 +21,5 @@ pcall(require, "local.options")
 
 -- if jit.os == "OSX" then require("macos.options") end
 if jit.os == "OSX" then pcall(require,"macos.options") end
-
+vim.cmd("colorscheme slate")
+vim.cmd[[highlight Normal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]

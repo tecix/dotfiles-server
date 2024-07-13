@@ -5,8 +5,12 @@ curl -L https://github.com/neovim/neovim/releases/download/nvim-linux64.tar.gz |
 ln -s /opt/nvim-linux64/bin/nvim /usr/local/bin/
 ```
 
+
 ### Starship install
 
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
+
+## Stow
+stow tex -t ~
