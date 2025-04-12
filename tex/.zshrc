@@ -39,10 +39,11 @@ alias grep="grep --color=auto"
 alias kdown="kitten transfer"
 alias kup="kitten transfer -d upload"
 alias t="tmux a"
-# alias vim="nvim"
+alias vim="nvim"
 force_color_prompt=yes
 
 PS1='%n@%m %~$ '
+export TERM=xterm-256color
 
 # Define functions for inserting commands
 insert_systemctl_start() {
