@@ -1,11 +1,12 @@
 #!/bin/bash
 DebianAptDepends=( 
-               python3-pip 
 	       stow
                git 
                unzip 
 	       fd-find
                ripgrep
+               kitty-terminfo
+               # python3-pip 
            )
 
 pipDepends=(
@@ -54,7 +55,7 @@ echo "This is a Linux Machine"
     sudo apt-get update && sudo apt-get upgrade -y
     sudo apt-get install -y "${DebianAptDepends[@]}" 
     sudo pip3 install -y "${pipDepends[@]}"
-    ln -s `which fdfind` /usr/local/bin/fd
+    sudo ln -s `which fdfind` /usr/local/bin/fd
 
   fi
 

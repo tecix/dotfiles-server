@@ -21,7 +21,7 @@ pcall(require, "local.options")
 
 -- if jit.os == "OSX" then require("macos.options") end
 if jit.os == "OSX" then pcall(require,"macos.options") end
-vim.cmd("colorscheme zaibatsu")
+-- vim.cmd("colorscheme zaibatsu")
 vim.cmd[[
   highlight Normal guibg=NONE guifg=NONE cterm=NONE ctermbg=NONE ctermfg=NONE
   highlight EndOfBuffer guibg=NONE ctermbg=NONE
