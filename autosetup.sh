@@ -6,6 +6,7 @@ DebianAptDepends=(
                unzip 
 	       fd-find
                ripgrep
+               kitty-terminfo
            )
 
 pipDepends=(
