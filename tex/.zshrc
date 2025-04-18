@@ -43,7 +43,6 @@ alias vim="nvim"
 force_color_prompt=yes
 
 PS1='%n@%m %~$ '
-export TERM=xterm-256color
 
 # Define functions for inserting commands
 insert_systemctl_start() {
